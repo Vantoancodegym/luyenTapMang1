@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai4</title>
+</head>
+<body onload="main()">
+<script>
+    function main(){
+        let arr = prompt("nhap 10 so nguyen cach nhau dau (,)").split(",");
+        alert(reveser(arr));
+    }
+    function reveser(arr) {
+        arr.reverse();
+        return arr.join(";");
+    }
+</script>
+</body>
+</html>

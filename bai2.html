@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body onload="main()">
+<script>
+    function main(){
+        let arr = prompt("nhap 10 so nguyen cach nhau dau (,)").split(",");
+        alert(findMax(arr));
+    }
+    function findMax(arr){
+        let max = arr[0];
+        for (let i=0;i<arr.length;i++){
+            if (arr[i]>max){
+                max=arr[i];
+            }
+        }return "lon nhat la: "+max+ " vi tri: "+arr.indexOf(max);
+
+    }
+</script>
+</body>
+</html>

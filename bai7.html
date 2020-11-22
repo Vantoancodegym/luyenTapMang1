@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai7</title>
+</head>
+<body onload="main()">
+<script>
+    function main(){
+        let arr = prompt("nhap 10 so nguyen cach nhau dau (,)").split(",");
+        let v= prompt("nhap 1 so bat ky");
+        alert(findAndRemove(arr,v));
+    }
+    function findAndRemove(arr,v){
+        let count =0;
+        for (let x=0;x<arr.length;x++){
+            if (arr[x]==v){
+                count++
+                changePosi(x,arr)
+                x-=1;
+                arr.pop();
+            }
+        }if(count==0){
+            return v+ " khong co trong day"
+        }else {
+            return "day moi sau khi xoa: "+arr.join(";");
+        }
+    }
+    function changePosi(a,arr){
+        for(let j=a;j<arr.length-1;j++){
+            let tmpt;
+            tmpt = arr[j];
+            arr[j]=arr[j+1]
+            arr[j+1]=tmpt;}
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai5</title>
+</head>
+<body onload="main()">
+<script>
+    function main(){
+        let arr = prompt("nhap 10 so nguyen cach nhau dau (,)").split(",");
+        alert(findNegative(arr));
+    }
+    function findNegative(arr){
+        let str="";
+        for (let x in arr){
+            if (arr[x]<0){
+                str+=arr[x]+";"
+            }
+        }return "cac so am la "+str;
+    }
+</script>
+</body>
+</html>

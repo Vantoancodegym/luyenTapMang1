@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai8</title>
+</head>
+<body onload="main()">
+<script>
+    function main(){
+        let arr = prompt("nhap 10 so nguyen cach nhau dau (,)").split(",");
+        alert(sort(arr));
+    }
+    function sort(arr){
+        arr.sort(function (a,b){
+            return b-a;
+        })
+        return arr;
+    }
+    </script>
+</body>
+</html>

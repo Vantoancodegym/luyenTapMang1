@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai6</title>
+</head>
+<body onload="main()">
+<script>
+    function main(){
+        let arr = prompt("nhap 10 so nguyen cach nhau dau (,)").split(",");
+        let v= prompt("nhap 1 so bat ky");
+        alert(findVinArray(arr,v));
+    }
+    function findVinArray(arr,v){
+        let count =0;
+        for (let x in arr){
+            if (arr[x]==v){
+                count++
+            }
+        }if (count==0){
+            return v+" khong co trong day ";
+        }else {
+            return v + " xuat hien trong day "+ count +" lan";
+        }
+    }
+</script>
+</body>
+</html>
